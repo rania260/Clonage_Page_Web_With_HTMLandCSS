@@ -1,0 +1,165 @@
+/* Définition des styles de base pour tous les éléments */
+* {
+    box-sizing: border-box; /* Utilisation de la boîte de modélisation border-box pour calculer la taille des éléments */
+    text-decoration: none; /* Suppression de la décoration du texte */
+    font-family: arial, sans-serif; /* Utilisation de la police Arial, sans-serif pour le texte */
+}
+
+/* Styles spécifiques pour le body */
+body {
+    display: flex; /* Utilisation de l'affichage flex pour aligner les éléments */
+    flex-direction: column; /* Alignement des éléments en colonne */
+    min-height: 100vh; /* Définition de la hauteur minimale du body à 100% de la hauteur de la fenêtre visible */
+}
+
+/* Styles spécifiques pour les images à l'intérieur de la balise nav */
+nav img {
+    width: 100%; /* Définition de la largeur de l'image à 100% de la largeur du conteneur parent */
+    max-width: 250px; /* Définition de la largeur maximale de l'image à 250 pixels */
+    padding: 1px; /* Ajout de 1 pixel de rembourrage autour de l'image */
+}
+
+/* Styles spécifiques pour les images lorsque survolées */
+img:hover {
+    opacity: .8; /* Réduction de l'opacité de l'image à 80% lorsqu'elle est survolée */
+}
+
+/* Styles spécifiques pour la balise nav */
+nav {
+    display: flex; /* Utilisation de l'affichage flexible pour aligner les éléments à l'intérieur de la navigation */
+    justify-content: center; /* Centrage horizontal des éléments à l'intérieur de la navigation */
+    align-items: center; /* Centrage vertical des éléments à l'intérieur de la navigation */
+    width: 100%; /* Définition de la largeur de la navigation à 100% de la largeur du conteneur parent */
+    padding: 10px; /* Ajout de 10 pixels de rembourrage autour de la navigation */
+    background-color: #ffffff; /* Définition de la couleur de fond de la navigation en blanc */
+}
+
+/* Styles spécifiques pour les liens à l'intérieur de la balise nav */
+nav a {
+    text-decoration: none; /* Suppression de la décoration du texte des liens */
+    color: rgba(6, 143, 235, 0.87); /* Définition de la couleur du texte des liens avec une valeur RGBA */
+    margin: 0 10px; /* Ajout de 0 marge au-dessus et en dessous du texte des liens et 10 pixels de marge à gauche et à droite */
+	padding: 20px;/* Ajout de 20 pixels de rembourrage autour de la navigation */
+    font-size: 18px; /* Définition de la taille de la police du texte des liens à 18 pixels */
+    transition: .5s; /* Ajout d'une transition de 0,5 seconde au survol des liens */
+}
+
+/* Styles spécifiques pour les liens lorsque survolés */
+nav a:hover {
+    background-color: #08b6eb; /* Définition de la couleur de fond des liens survolés en bleu */
+    color: #ffffff; /* Définition de la couleur du texte des liens survolés en blanc */
+}
+
+/* Styles spécifiques pour les écrans d'une largeur maximale de 768 pixels */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap; /* Permet aux éléments de la navigation de s'envelopper dans plusieurs lignes lorsque l'espace est insuffisant */
+    }
+
+    nav a {
+        margin: 5px; /* Ajout de 5 pixels de marge autour des liens lorsque l'espace est insuffisant */
+    }
+}
+/* Styles spécifiques pour la balise main */
+main {
+	display: flex; /* Utilisation de l'affichage flexible pour aligner les éléments à l'intérieur de la balise */
+    justify-content: center; /* Centrage horizontal des éléments à l'intérieur de la balise  */
+    align-items: center; /* Centrage vertical des éléments à l'intérieur de la balise */
+    width: 100%; /* Définition de la largeur de la balise à 100% de la largeur du conteneur parent */
+    padding: 15px;
+	background-color: rgb(223, 223, 222);
+
+}
+/* Styles spécifiques pour le blok1 */
+.blok1 {
+	padding: 50px;/* Ajout de 50 pixels de rembourrage autour ddu block1 */
+  }
+/* Styles pour l'en-tête h1 dans la section "blok1" */
+.blok1 h1{
+	color: #2c2c2c; /* Définition de la couleur du Titre */
+  }
+/* Styles pour l'en-tête p dans la section "blok1" */
+.blok1 p{
+	color: #616161;/* Définition de la couleur du texte */
+  }
+  /* Styles spécifiques pour le blok2 */
+.blok2 {
+	background-color: #ffffff;/* Définition de la couleur du background */
+	padding: 5px;/* Ajout de 5 pixels de rembourrage autour du block2 */
+  }
+/* Styles pour l'en-tête p dans la section "blok2" */
+.blok2 p{ 
+	color: #616161;/* Définition de la couleur du texte */
+  }
+
+/* Styles pour le bouton .s-btn */
+.s-btn {
+
+	background-color: rgba(6, 143, 235, 0.87);
+    border: 1px solid transparent;
+	padding: 9px 15px;
+	color: #ffffff;
+	font-size: 14px;
+	border-radius: 4px;
+	margin-right: 10px;
+	margin-top: 28px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
+    
+}
+/* Styles responsifs pour des écrans jusqu'à 768px de large */
+
+  @media screen and (max-width: 768px) {
+	main {
+		flex-direction: column; /* Change la direction en colonne pour empiler les éléments sur des écrans plus petits */
+	  }
+	.blok1,
+	.blok2 {
+		flex-wrap: wrap;/* Flex-wrap pour empêcher le chevauchement des éléments sur des écrans plus petits */
+
+		margin: 5px;
+	}
+  }
+  
+/* Styles pour la section "photos" */
+
+.photos{
+    display: flex;
+    justify-content: center; /* Centrage horizontal des éléments à l'intérieur de la section */
+    align-items: center;
+    width: 100%; 
+    padding: 10px;
+}
+/* Styles pour les images dans la section "photos" */
+.photos img{
+	width: 100%; /* Définition de la largeur de l'image à 100% de la largeur du conteneur parent */
+	height: 170px;/* Définition de la hauteur de l'image à 170px de la largeur du conteneur parent */
+	padding: 10px;
+}
+/* Styles pour l'en-tête h1 dans la section "photos" */
+.photos h1{
+	color: #2c2c2c;/* Définition de la couleur du Titre */
+	padding: 10px;    
+
+}
+/* Styles pour les paragraphes dans la section "photos" */
+
+.photos p{
+	color: #616161;/* Définition de la couleur du texte */
+	padding: 10;
+
+}
+  
+/* Styles responsifs pour des écrans jusqu'à 768px de large dans la section "photos" */
+  @media screen and (max-width: 768px) {
+	.photos {
+		flex-direction: column; /* Change la direction en colonne pour empiler les éléments sur des écrans plus petits */
+		align-items: center; /* Centrage horizontal des éléments dans la direction en colonne */
+	}
+  
+	.photos img {
+		height: auto; /* Permet à l'image de se redimensionner de manière proportionnelle sur des écrans plus petits */
+	}
+  }
+  
